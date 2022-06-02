@@ -31,8 +31,7 @@ public class ControladorLogin{
         boolean existe = clienteConexao.autenticarPorCpf(autenticarCliente);
         
         if(existe){
-            Menu telademenu = new Menu();
-            telademenu.setVisible(true);
+           JOptionPane.showMessageDialog(view, "Login realizado com sucesso!");
         }else{
             JOptionPane.showMessageDialog(view, "CPF ou senha invalidos");
         }
