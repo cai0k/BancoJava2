@@ -33,9 +33,7 @@ public class ControladorCadastro {
             Connection conexao = new Conexao().getConnection();
             ClienteSQL clienteConexao = new ClienteSQL(conexao);
             clienteConexao.insert(cliente);
-            
-            JOptionPane.showMessageDialog(null, "Conta criada com sucesso!");
-            JOptionPane.showMessageDialog(view, "Bem vindo "+nome);
+            JOptionPane.showMessageDialog(view, "Conta criada com sucesso!");
         
         } catch (SQLException ex) {
             Logger.getLogger(Cadastro.class.getName()).log(Level.SEVERE, null, ex);
